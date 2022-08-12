@@ -1,0 +1,64 @@
+
+E:\workspace\sws-test>cd E:\workspace\sws-test\wip\.. 
+
+E:\workspace\sws-test>mvn clean spring-boot:run 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:swstest >-------------------------
+[INFO] Building swstest 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ swstest ---
+[INFO] Deleting E:\workspace\sws-test\target
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.7.2:run (default-cli) > test-compile @ swstest >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ swstest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:compile (default-compile) @ swstest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to E:\workspace\sws-test\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ swstest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory E:\workspace\sws-test\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ swstest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to E:\workspace\sws-test\target\test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.7.2:run (default-cli) < test-compile @ swstest <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.7.2:run (default-cli) @ swstest ---
+[INFO] Attaching agents: []
+12:02:02.908 [Thread-0] DEBUG org.springframework.boot.devtools.restart.classloader.RestartClassLoader - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4bdd9c3f
+2022-08-12 12:02:03.154  INFO 13012 --- [  restartedMain] com.example.swstest.SwstestApplication   : Starting SwstestApplication using Java 17.0.3 on sovereign-pc with PID 13012 (E:\workspace\sws-test\target\classes started by Sovereign in E:\workspace\sws-test)
+2022-08-12 12:02:03.155  INFO 13012 --- [  restartedMain] com.example.swstest.SwstestApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-12 12:02:03.182  INFO 13012 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-12 12:02:03.182  INFO 13012 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-12 12:02:03.609  INFO 13012 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-12 12:02:03.610  INFO 13012 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-08-12 12:02:03.686  INFO 13012 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 R2DBC repository interfaces.
+2022-08-12 12:02:04.102  INFO 13012 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-12 12:02:04.473  INFO 13012 --- [  restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-08-12 12:02:04.473  INFO 13012 --- [  restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-08-12 12:02:04.473  INFO 13012 --- [  restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-08-12 12:02:04.741  INFO 13012 --- [  restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://127.0.0.1:25432/sws-test (PostgreSQL 14.4)
+2022-08-12 12:02:04.768  INFO 13012 --- [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2022-08-12 12:02:04.774  INFO 13012 --- [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2022-08-12 12:02:04.774  INFO 13012 --- [  restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-08-12 12:02:04.883  INFO 13012 --- [  restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-08-12 12:02:04.973  INFO 13012 --- [  restartedMain] com.example.swstest.SwstestApplication   : Started SwstestApplication in 2.059 seconds (JVM running for 2.332)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  07:08 min
+[INFO] Finished at: 2022-08-12T12:09:08+10:00
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? 

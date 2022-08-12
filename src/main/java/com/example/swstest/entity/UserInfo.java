@@ -10,7 +10,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
 /**
  *
@@ -35,5 +34,15 @@ public class UserInfo {
     message="phone must consist of 11-13 digits with an optional preceeding plus sign"
   )
   private final String phone;
+  
+  public static UserInfo.UserInfoBuilder builderFrom(UserInfo template) {
+    return UserInfo.builder()
+      .firstName(template.firstName)
+      .middleName(template.middleName)
+      .lastName(template.lastName)
+      .phone(template.phone)
+      .email(template.email)
+      .id(template.id);
+  }
   
 }

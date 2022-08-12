@@ -11,7 +11,7 @@ spring:
     url: jdbc:postgresql://127.0.0.1:25432/sws-test
     user: ${spring.r2dbc.username}
     password: ${spring.r2dbc.password}
-    baseline-on-migrate: true
+    schemas: public
 logging:
   level:
     root: info
