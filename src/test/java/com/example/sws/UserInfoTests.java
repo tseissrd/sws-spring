@@ -1,10 +1,10 @@
 /*
  */
-package com.example.swstest;
+package com.example.sws;
 
-import com.example.swstest.controller.UserInfoRouter;
-import com.example.swstest.entity.UserInfo;
-import com.example.swstest.service.UserInfoService;
+import com.example.sws.controller.UserInfoRouter;
+import com.example.sws.entity.UserInfo;
+import com.example.sws.service.UserInfoService;
 import org.junit.jupiter.api.Test;
 import static org.mockito.ArgumentMatchers.*;
 import org.mockito.Mockito;

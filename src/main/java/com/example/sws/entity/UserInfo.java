@@ -1,6 +1,6 @@
 /*
  */
-package com.example.swstest.entity;
+package com.example.sws.entity;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;

@@ -1,13 +1,13 @@
-package com.example.swstest;
+package com.example.sws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SwstestApplication {
+public class SwsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SwstestApplication.class, args);
+		SpringApplication.run(SwsApplication.class, args);
 	}
 
 }

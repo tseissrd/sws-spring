@@ -1,8 +1,8 @@
 /*
  */
-package com.example.swstest.data;
+package com.example.sws.data;
 
-import com.example.swstest.entity.UserInfo;
+import com.example.sws.entity.UserInfo;
 import org.springframework.data.r2dbc.repository.R2dbcRepository;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;

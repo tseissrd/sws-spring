@@ -1,9 +1,9 @@
 /*
  */
-package com.example.swstest.service;
+package com.example.sws.service;
 
-import com.example.swstest.data.UserInfoRepository;
-import com.example.swstest.entity.UserInfo;
+import com.example.sws.data.UserInfoRepository;
+import com.example.sws.entity.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
@@ -23,7 +23,11 @@ public final class UserInfoService {
   }
   
   public Mono<UserInfo> create(UserInfo info) {
-    return repository.save(info);
+    return repository.save(
+      UserInfo.builderFrom(info)
+        .id(null)
+        .build()
+    );
   }
   
   private UserInfoService() {}

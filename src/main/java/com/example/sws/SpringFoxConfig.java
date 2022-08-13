@@ -1,6 +1,6 @@
 /*
  */
-package com.example.swstest;
+package com.example.sws;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

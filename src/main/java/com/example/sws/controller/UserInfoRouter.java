@@ -1,9 +1,9 @@
 /*
  */
-package com.example.swstest.controller;
+package com.example.sws.controller;
 
-import com.example.swstest.entity.UserInfo;
-import com.example.swstest.service.UserInfoService;
+import com.example.sws.entity.UserInfo;
+import com.example.sws.service.UserInfoService;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
